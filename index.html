@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Car Racing Game</title>
+    <title>Advanced Car Racing Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>🚗 Car Racing Game</h1>
-<h2>Score: <span id="score">0</span></h2>
-<button onclick="startGame()">Start Game</button>
+<h1>🚗 Advanced Car Racing</h1>
+
+<div class="hud">
+    <span>Score: <span id="score">0</span></span>
+    <span>Lives: <span id="lives">3</span></span>
+    <span>Level: <span id="level">1</span></span>
+</div>
+
+<div class="controls">
+    <button onclick="startGame()">Start</button>
+    <button onclick="pauseGame()">Pause</button>
+    <button onclick="restartGame()">Restart</button>
+</div>
 
 <div id="gameArea"></div>
 
